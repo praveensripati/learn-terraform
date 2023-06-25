@@ -19,7 +19,7 @@ variable "security_group_name" {
 variable "ami" {
   description = "ami"
   type        = string
-  default     = "1234"
+  default     = "ami-003d3d03cfe1b0468"
 }
 
 variable "instance_type" {

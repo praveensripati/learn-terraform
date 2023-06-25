@@ -16,12 +16,6 @@ variable "security_group_name" {
   default     = "Default Security Group Name"
 }
 
-variable "ami" {
-  description = "ami"
-  type        = string
-  default     = "ami-022e1a32d3f742bd8"
-}
-
 variable "instance_type" {
   description = "instance_type"
   type        = string

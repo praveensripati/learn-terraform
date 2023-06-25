@@ -20,14 +20,32 @@ provider "aws" {
   region = "us-east-1"
 }
 
+data "aws_ami" "ubuntu" {
+
+    most_recent = true
+
+    filter {
+        name   = "name"
+        values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+    }
+
+    filter {
+        name = "virtualization-type"
+        values = ["hvm"]
+    }
+
+    owners = ["099720109477"]
+}
+
 module "my_ec2_and_sg" {
   source             = "./modules/ec2_and_sg"
 
   ingress_from__port = var.ingress_from__port
   ingress_to__port = var.ingress_to__port
   security_group_name = var.security_group_name
-  ami = var.ami
   instance_type = var.instance_type
+
+  ami = data.aws_ami.ubuntu.id
 }
 
 /*
