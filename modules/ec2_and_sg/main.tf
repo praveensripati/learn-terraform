@@ -4,6 +4,7 @@ module "my_security_group" {
   ingress_from__port = var.ingress_from__port
   ingress_to__port = var.ingress_to__port
   security_group_name = var.security_group_name
+  cidr_ipv4 = var.cidr_ipv4
 }
 
 module "my_ec2_instance" {

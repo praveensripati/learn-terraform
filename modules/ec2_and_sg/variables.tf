@@ -27,3 +27,9 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"
 }
+
+variable "cidr_ipv4" {
+  description = "CIDR IPV4"
+  type        = string
+  default     = "0.0.0.0/0"
+}

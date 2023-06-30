@@ -43,9 +43,10 @@ module "my_ec2_and_sg" {
   ingress_from__port = var.ingress_from__port
   ingress_to__port = var.ingress_to__port
   security_group_name = var.security_group_name
-  instance_type = var.instance_type
+  cidr_ipv4 = var.cidr_ipv4
 
   ami = data.aws_ami.ubuntu.id
+  instance_type = var.instance_type
 }
 
 /*

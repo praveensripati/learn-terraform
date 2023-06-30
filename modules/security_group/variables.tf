@@ -15,3 +15,9 @@ variable "security_group_name" {
   type        = string
   default     = "Default Security Group Name"
 }
+
+variable "cidr_ipv4" {
+  description = "CIDR IPV4"
+  type        = string
+  default     = "0.0.0.0/0"
+}
