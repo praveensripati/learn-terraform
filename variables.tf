@@ -5,9 +5,15 @@ variable "ingress_from__port" {
 }
 
 variable "ingress_to__port" {
-  description = "Ingres from port"
+  description = "Ingres to port"
   type        = number
-  default     = "5678"
+  default     = "1234"
+
+  validation {
+    condition     = var.ingress_to__port > 0
+    error_message = "The port number should be greater than 0"
+  }
+
 }
 
 variable "security_group_name" {

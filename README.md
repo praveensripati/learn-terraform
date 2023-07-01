@@ -4,6 +4,7 @@
 
 1. Terraform general tutorials
     - https://developer.hashicorp.com/terraform/tutorials
+    - https://skillmix.io/terraform/terraform-course-intro/
 
 ## TF Features
 
