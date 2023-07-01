@@ -1,5 +1,10 @@
 # learn-terraform
 
+## General Tutorials
+
+1. Terraform general tutorials
+    - https://developer.hashicorp.com/terraform/tutorials
+
 ## TF Features
 
 1. Terraform Cloud Plans and Features
@@ -21,6 +26,10 @@
 
 1. Sentinel Policies
     - https://github.com/hashicorp/terraform-sentinel-policies/tree/main
+
+1. Sentinel documentation
+    - https://docs.hashicorp.com/sentinel
+    - https://docs.hashicorp.com/sentinel/intro
 
 ## Drift
 
