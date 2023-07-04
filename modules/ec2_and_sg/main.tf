@@ -13,4 +13,8 @@ module "my_ec2_instance" {
   ami = var.ami
   instance_type = var.instance_type
   security_group_id = module.my_security_group.security_group_id
+
+  depends_on = [
+    module.my_security_group
+  ]
 }
